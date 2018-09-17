@@ -94,7 +94,7 @@ var isValidSudoku = function(board) {
     }
     ary = [];
   }
-
+  
   //=> 竖
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
@@ -107,7 +107,7 @@ var isValidSudoku = function(board) {
     }
     ary = [];
   }
-
+  
   //=> 1
   for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {

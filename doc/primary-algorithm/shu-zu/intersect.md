@@ -57,7 +57,7 @@ var intersect = function(nums1, nums2) {
       result.push(item);
     }
   })
-
+  
   return result;
 };
 ```

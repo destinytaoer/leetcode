@@ -38,7 +38,7 @@ s = "loveleetcode",
 var firstUniqChar = function(s) {
   //=> 如果大小写算作重复的话
   s = s.toLowerCase();
-
+  
   for (let i = 0; i < s.length; i++) {
     let item = s[i];
     if (s.indexOf(item) === s.lastIndexOf(item)) {
@@ -62,7 +62,7 @@ var firstUniqChar = function(s) {
 var firstUniqChar = function(s) {
   //=> 如果大小写算作重复的话
   s = s.toLowerCase();
-
+  
   for (let i = 0; i < s.length; i++) {
     //=> 记录是否存在重复，true 为不存在重复
     let flag = false;

@@ -55,13 +55,13 @@ var longestCommonPrefix = function(strs) {
       return item.length;
     }),
     n = Math.min.apply(Math, lengthAry);
-
+  
   for (let i = 0; i < n; i++) {
     let flag = true;
     for (let j = 0; j < strs.length-1; j++) {
       let item = strs[j],
           next = strs[j+1];
-
+      
       if (item[i] !== next[i]) {
         flag = false;
         break;

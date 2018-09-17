@@ -89,11 +89,11 @@ var containsDuplicate = function(nums) {
 ```javascript
 var containsDuplicate = function(nums) {
   let arr = [...nums];
-
+  
   arr.sort((a, b)=>{
     return a - b;
   });
-
+  
   for (let i = 0; i < arr.length; i++) {
     if ((typeof arr[i-1] !== 'undefined' && arr[i] === arr[i-1]) || (typeof arr[i+1] !== 'undefined' && arr[i] === arr[i+1])) {
       return true;
@@ -102,4 +102,6 @@ var containsDuplicate = function(nums) {
   return false;
 };
 ```
+
+
 
