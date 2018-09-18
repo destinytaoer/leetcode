@@ -36,7 +36,7 @@ Part I 初级算法
   * [删除链表中的节点](primary-algorithm/linked-list/remove-node.md)
   * [删除链表的倒数第N个节点](primary-algorithm/linked-list/remove-the-last-nth-node.md)
   * [反转链表](primary-algorithm/string/reverse-string.md)
-  * [合并两个有序链表](primary-algorithm/linked-list/he-bing-liang-ge-you-xu-lian-biao.md)
+  * [合并两个有序链表](primary-algorithm/linked-list/merge-two-ordered-linked-lists.md)
 
 面试题
 
