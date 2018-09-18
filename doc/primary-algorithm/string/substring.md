@@ -60,9 +60,7 @@ var strStr = function(haystack, needle) {
 };
 ```
 
-{% hint style="info" %}
 **优化：由于符合的子串应当长度相等，所以，最初的循环只需要到 haystack 长度 - needle 长度 + 1 即可，后面的子串长度肯定小于 needle，不需要考虑了**
-{% endhint %}
 
 ```javascript
 var strStr = function(haystack, needle) {
@@ -88,11 +86,9 @@ var strStr = function(haystack, needle) {
 * 如果都符合，则返回当前索引
 * 外层循环结束还是没有找到，则返回 -1
 
-{% hint style="danger" %}
-**注意**：这里提交，会显示时间超时，也就是两个字符串长度都很大的时候，两层循环，运行时间指数增长。
+> **注意**：这里提交，会显示时间超时，也就是两个字符串长度都很大的时候，两层循环，运行时间指数增长。
 
-所以，为了减少循环次数，想到了上面方法中提到的优化，上面的方法也可以使用。优化后，代码运行时间就相当的可观了
-{% endhint %}
+> 所以，为了减少循环次数，想到了上面方法中提到的优化，上面的方法也可以使用。优化后，代码运行时间就相当的可观了
 
 ```javascript
 var strStr = function(haystack, needle) {

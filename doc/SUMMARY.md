@@ -27,6 +27,11 @@
   * [实现 strStr\(\) 函数](primary-algorithm/string/substring.md)
   * [报数](primary-algorithm/string/number-off.md)
   * [最长公共前缀](primary-algorithm/string/longest-common-prefix.md)
+* [链表](primary-algorithm/linked-list/README.md)
+  * [删除链表中的节点](primary-algorithm/linked-list/remove-node.md)
+  * [删除链表的倒数第N个节点](primary-algorithm/linked-list/remove-the-last-nth-node.md)
+  * [反转链表](primary-algorithm/linked-list/reverse-linkedlist.md)
+* [合并两个有序链表](primary-algorithm/merge-two-ordered-linked-lists.md)
 
 ## 面试题
 
