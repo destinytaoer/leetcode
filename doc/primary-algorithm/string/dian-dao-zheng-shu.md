@@ -72,3 +72,35 @@ var reverse = function(x) {
 };
 ```
 
+### 2. 直接进行数值计算
+
+思路：
+
+* 如果是 0，直接返回 0 即可
+* 每次循环，将 x 的最后一位通过取余的方式获得并添加在结果的最后一位上 `result * 10 + x % 10`。这样不管正负都是可行的
+* 进行结果的最大最小限制，放在前面是为了优化，只要计算过程中有超过的就可以直接结束，返回 0
+* 去掉 x 的最后一位（通过除以 10），这里需要进行判断，x 为正时就向下取整，为负时，就向上取整，直到 x 等于 0 为止，循环结束，返回结果
+
+```javascript
+var reverse = function(x) {
+  if (x === 0) return 0;
+  let min = -(2 ** 31),
+      max = 2 ** 31-1;
+
+  let result = 0;
+  while (x !== 0) {
+    result = result * 10 + x % 10;
+
+    if (result > max || result < min) return 0;
+
+    if (x < 0) {
+      x = Math.ceil(x/10);
+    } else {
+      x = Math.floor(x/10);
+    }
+  }
+
+  return result;
+};
+```
+
