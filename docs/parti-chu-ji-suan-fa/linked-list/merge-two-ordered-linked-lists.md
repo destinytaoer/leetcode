@@ -2,7 +2,7 @@
 
 ## 描述
 
-将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 
+将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
 
 **示例：**
 
@@ -40,7 +40,7 @@
 var mergeTwoLists = function(l1, l2) {
   if (!l1) return l2;
   if (!l2) return l1;
-  
+
   let head = null,
       cur = null;
   if (l1.val > l2.val) {
@@ -81,10 +81,10 @@ var mergeTwoLists = function(l1, l2) {
 var mergeTwoLists = function(l1, l2) {
   if (!l1) return l2;
   if (!l2) return l1;
-  
+
   let head = l1,
       ary = [];
-  
+
   //=> 把所有值都保存在数组中
   ary.push(l1.val);
   while (l1.next) {
@@ -96,10 +96,10 @@ var mergeTwoLists = function(l1, l2) {
     l1 = l1.next;
     ary.push(l1.val);
   }
-  
+
   //=> 对数组进行排序
   ary.sort((a,b)=>a-b);
-  
+
   //=> 放回到新链表中
   l1 = head;
   ary.forEach(item=>{
